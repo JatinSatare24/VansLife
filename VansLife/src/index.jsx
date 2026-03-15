@@ -19,7 +19,6 @@ import HostLayout from "./components/HostLayout"
 import "./server"
 
 function App() {
-
   return (
     <BrowserRouter>
       <Routes>
@@ -28,7 +27,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="vans" element={<Vans />} />
           <Route path="vans/:id" element={<VanDetail />} />
-
+          
           <Route path="host" element={<HostLayout />}>
             <Route index element={<Dashboard />} />
             <Route path="income" element={<Income />} />
